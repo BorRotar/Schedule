@@ -1,5 +1,6 @@
 # Schedule
-A custom schedule maker
+A custom schedule maker.
+
 This application takes an Array of employees and an Array of days in a month. It then distributes the employees throughout the month by assigning them shifts during the day or during the night. 
 Each employee Object has a "nightshift" and "leader" property as a Boolean. Each time an employee is assigned a shift in a day their weekly and monthly hours are raised for the duration of the shift (10.5, 10 or 12 hours).
 There is a limit to how many hours per week (56) and per month (176) an employee can work. 
