@@ -1,0 +1,39 @@
+.header {
+    grid-area: hd;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.footer {
+    grid-area: ft;
+    background-color: beige;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.content {
+    grid-area: main;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.sidebar {
+    grid-area: sd;
+    text-align: justify;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "hd hd hd hd   hd   hd   hd   hd   hd"
+      "sd sd sd main main main main main main"
+      "sd sd sd  ft  ft   ft   ft   ft   ft";
+}
+.selected {
+  background-color: red;
+}
