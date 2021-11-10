@@ -1,4 +1,4 @@
-# Schedule
+# 24-hour work Schedule
 A custom schedule maker.
 
 This application takes a list of employees and a list of days in a month. It then distributes the employees throughout the month by assigning them shifts during the day or during the night.  
